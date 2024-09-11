@@ -1,0 +1,66 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,intial-scale=1.0" />
+    <title>Text to speech</title>
+    <style>
+      body {
+        margin: 0;
+      }
+
+      .container {
+        width: 100%;
+        height: 100vh;
+        background-color: pink;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg clip-path='url(%26quot%3b%23SvgjsClipPath1042%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='%2332325d'%3e%3c/rect%3e%3ccircle r='15.755' cx='974.56' cy='224.44' fill='url(%26quot%3b%23SvgjsLinearGradient1043%26quot%3b)'%3e%3c/circle%3e%3ccircle r='19.725' cx='1329.52' cy='70.71' fill='url(%26quot%3b%23SvgjsLinearGradient1044%26quot%3b)'%3e%3c/circle%3e%3ccircle r='34.185' cx='172.29' cy='99.59' fill='url(%26quot%3b%23SvgjsLinearGradient1045%26quot%3b)'%3e%3c/circle%3e%3ccircle r='25.955' cx='1061.94' cy='180.48' fill='url(%26quot%3b%23SvgjsLinearGradient1046%26quot%3b)'%3e%3c/circle%3e%3ccircle r='33.31' cx='1084.58' cy='42.69' fill='url(%26quot%3b%23SvgjsLinearGradient1047%26quot%3b)'%3e%3c/circle%3e%3ccircle r='18.32' cx='169.77' cy='318.72' fill='url(%26quot%3b%23SvgjsLinearGradient1048%26quot%3b)'%3e%3c/circle%3e%3ccircle r='24.97' cx='1312.84' cy='286.79' fill='url(%26quot%3b%23SvgjsLinearGradient1049%26quot%3b)'%3e%3c/circle%3e%3ccircle r='18.135' cx='661.15' cy='26.73' fill='url(%26quot%3b%23SvgjsLinearGradient1050%26quot%3b)'%3e%3c/circle%3e%3c/g%3e%3cdefs%3e%3cclipPath id='SvgjsClipPath1042'%3e%3crect width='1440' height='560' x='0' y='0'%3e%3c/rect%3e%3c/clipPath%3e%3clinearGradient x1='943.05' y1='224.44' x2='1006.0699999999999' y2='224.44' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1043'%3e%3cstop stop-color='%2332325d' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%23424488' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='1290.07' y1='70.71' x2='1368.97' y2='70.71' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1044'%3e%3cstop stop-color='%23ab3c51' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%234f4484' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='103.91999999999999' y1='99.59' x2='240.66' y2='99.59' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1045'%3e%3cstop stop-color='%23ab3c51' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%234f4484' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='1010.0300000000001' y1='180.48' x2='1113.8500000000001' y2='180.48' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1046'%3e%3cstop stop-color='%23ab3c51' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%234f4484' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='1017.9599999999999' y1='42.69' x2='1151.1999999999998' y2='42.69' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1047'%3e%3cstop stop-color='%2384b6e0' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%23464a8f' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='133.13' y1='318.72' x2='206.41' y2='318.72' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1048'%3e%3cstop stop-color='%2332325d' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%23424488' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='1262.8999999999999' y1='286.79' x2='1362.7799999999997' y2='286.79' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1049'%3e%3cstop stop-color='%2384b6e0' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%23464a8f' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='624.88' y1='26.73' x2='697.42' y2='26.73' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1050'%3e%3cstop stop-color='%23ab3c51' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%234f4484' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
+      }
+
+      h1 {
+        font-size: 80px;
+        margin: 0;
+        color: white;
+        text-shadow: 5px 5px 10px rgba(0, 0, 0.5);
+        font-family: sans-serif;
+      }
+
+      textarea {
+        margin: 30px 0;
+        width: 400px;
+        height: 200px;
+        box-shadow: 12px 12px 15px rgba(0, 0, 0.5);
+      }
+
+      button {
+        width: 200px;
+        height: 50px;
+        border: none;
+        outline: none;
+        background-color: white;
+        box-shadow: 12px 12px 15px rgba(0, 0, 00.5);
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Text to speech</h1>
+      <textarea id="text"></textarea>
+      <button onclick="speak()">Tap To speak</button>
+    </div>
+
+    <script>
+      var speech = new SpeechSynthesisUtterance();
+      function speak() {
+        speech.text = textToSpeech.value;
+        speech.volume = 2;
+        speech.rate = 1;
+        speech.pitch = 1;
+        window.speechSynthesis.speak(speech);
+      }
+    </script>
+  </body>
+</html>
